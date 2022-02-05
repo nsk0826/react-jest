@@ -20,7 +20,7 @@ describe('test index.js file', () => {
   });
 
   it('has 3', () => {
-    expect(makeRange(1, 4)).toContain(2);
+    expect(makeRange(1, 4)).toContain(3);
   });
 
 });
