@@ -9,6 +9,14 @@ describe('test index.js file', () => {
     expect(sum(1, 5)).toBe(6);
   });
 
+  it('sums a and b2', () => {
+    let result = sum(2, 2);
+    expect(result).toBe(4);
+    result = sum(4, 4);
+    expect(result).toBe(8);
+    expect(sum(1, 2)).toBe(3);
+  });
+
   it('makes a person', () => {
     expect(makeUser('Yakuza', 20)).toEqual({
       name: 'Yakuza',
