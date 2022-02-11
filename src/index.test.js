@@ -1,4 +1,4 @@
-const { sum, makeUser, makeRange } = require('./index');
+const { sum, makeUser, makeRange, checkDiff } = require('./index');
 
 describe('test index.js file', () => {
   it('sums a and b', () => {
@@ -30,5 +30,15 @@ describe('test index.js file', () => {
   it('has 3', () => {
     expect(makeRange(1, 4)).toContain(3);
   });
+
+  it('diff ', () => {
+    expect(checkDiff(1, 4)).toBe(false);
+  });
+
+  it('not diff ', () => {
+    expect(checkDiff(1, 1)).toBe(true);
+  });
+
+
 
 });
