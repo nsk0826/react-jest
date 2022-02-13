@@ -1,4 +1,4 @@
-const { sum, makeUser, makeRange, checkDiff } = require('./index');
+const { sum, makeUser, makeRange, checkDiff, unionString } = require('./index');
 
 describe('test index.js file', () => {
   it('sums a and b', () => {
@@ -39,6 +39,9 @@ describe('test index.js file', () => {
     expect(checkDiff(1, 1)).toBe(true);
   });
 
+  it('文字列結合', () => {
+    expect(unionString("a", "b")).toBe("ab");
+  });
 
 
 });

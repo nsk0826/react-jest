@@ -21,9 +21,15 @@ const makeRange = (start, end) => {
   return result;
 };
 
+const unionString = (a, b) => {
+  return a + b;
+};
+
+
 module.exports = {
   sum,
   makeUser,
   makeRange,
-  checkDiff
+  checkDiff,
+  unionString
 };
