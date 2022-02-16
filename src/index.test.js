@@ -1,4 +1,4 @@
-const { sum, makeUser, makeRange, checkDiff, unionString } = require('./index');
+const { sum, makeUser, makeRange, checkDiff, unionString, isIndexOfPatternTop } = require('./index');
 
 describe('test index.js file', () => {
   it('sums a and b', () => {
@@ -42,6 +42,10 @@ describe('test index.js file', () => {
   it('文字列結合', () => {
     expect(unionString("a", "b")).toBe("ab");
   });
+
+  it('isIndexOfPatternTop', () =>{
+    expect(isIndexOfPatternTop("abc", "a")).toBe(0);
+  })
 
 
 });

@@ -25,11 +25,17 @@ const unionString = (a, b) => {
   return a + b;
 };
 
+const isIndexOfPatternTop = (a,b) => {
+  if(a.indexOf(b) === 0){
+    return 0
+  }
+}
 
 module.exports = {
   sum,
   makeUser,
   makeRange,
   checkDiff,
-  unionString
+  unionString,
+  isIndexOfPatternTop
 };
