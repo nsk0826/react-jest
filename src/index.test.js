@@ -51,4 +51,13 @@ describe('test index.js file', () => {
     expect(isIndexOfPatternTop("abc", "bc")).toBe(false);
   })
 
+  it('getIndexOfNumber 0', () =>{
+    expect(getIndexOfNumber("abcdefg", "a")).toBe(0);
+  })
+
+  it('getIndexOfNumber 1', () =>{
+    expect(getIndexOfNumber("abcdefg", "bc")).toBe(1);
+  })
+
+
 });
