@@ -1,3 +1,7 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+
 const sum = (a, b) => {
   return a + b;
 };
@@ -32,6 +36,22 @@ const getIndexOfNumber = (a,b) => {
 const isIndexOfPatternTop = (a,b) => {
   return !a.indexOf(b)
 }
+
+class IndexSample extends React.Component {
+
+  render() {
+    return (
+      <div>
+        <h1>Sample...</h1>
+      </div>
+    );
+  }
+}
+
+ReactDOM.render(
+  <IndexSample />,
+  document.getElementById('root')
+);
 
 
 module.exports = {
