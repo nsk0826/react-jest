@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-function Example() {
+export function Sample2() {
   const [count, setCount] = useState(0);
 
   useEffect(() => {

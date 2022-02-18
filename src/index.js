@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import { Sample2 } from './sample2';
 
 const sum = (a, b) => {
   return a + b;
@@ -49,7 +50,7 @@ class IndexSample extends React.Component {
 }
 
 ReactDOM.render(
-  <IndexSample />,
+  <Sample2 />,
   document.getElementById('root')
 );
 
