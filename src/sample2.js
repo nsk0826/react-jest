@@ -20,6 +20,9 @@ export function Sample2() {
       <button onClick={() => cnt2action()}>
         Click me cont2
       </button>
+      <button onClick={() => setCount(count + 3)}>
+        Click me cont3
+      </button>
     </div>
   );
 }
