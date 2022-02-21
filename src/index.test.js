@@ -1,4 +1,4 @@
-const { sum, makeUser, makeRange, checkDiff, unionString, isIndexOfPatternTop, getIndexOfNumber} = require('./index');
+const { sum, makeUser, makeRange, checkDiff, unionString, isIndexOfPatternTop, getIndexOfNumber, isIndexOfPatternBottom} = require('./index');
 
 describe('test index.js file', () => {
   it('sums a and b', () => {
@@ -43,20 +43,28 @@ describe('test index.js file', () => {
     expect(unionString("a", "b")).toBe("ab");
   });
 
-  it('isIndexOfPatternTop true', () =>{
+  it('isIndexOfPatternTop true', () => {
     expect(isIndexOfPatternTop("abc", "a")).toBe(true);
   })
 
-  it('isIndexOfPatternTop false', () =>{
+  it('isIndexOfPatternTop false', () => {
     expect(isIndexOfPatternTop("abc", "bc")).toBe(false);
   })
 
-  it('getIndexOfNumber 0', () =>{
+  it('getIndexOfNumber 0', () => {
     expect(getIndexOfNumber("abcdefg", "a")).toBe(0);
   })
 
-  it('getIndexOfNumber 1', () =>{
+  it('getIndexOfNumber 1', () => {
     expect(getIndexOfNumber("abcdefg", "bc")).toBe(1);
+  })
+
+  it('getIndexOfBottom true', () => {
+    expect(isIndexOfPatternBottom("abcdefg", "g")).toBe(true);
+  })
+
+  it('getIndexOfBottom false', () => {
+    expect(isIndexOfPatternBottom("abcdefg", "f")).toBe(false);
   })
 
 
