@@ -1,13 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import { Sample2 } from './sample2';
 
 const sum = (a, b) => {
   return a + b;
 };
 
-const checkDiff = (v , v2) => {
+const checkDiff = (v, v2) => {
   return v === v2;
 };
 
@@ -30,20 +29,20 @@ const unionString = (a, b) => {
   return a + b;
 };
 
-const getIndexOfNumber = (a,b) => {
+const getIndexOfNumber = (a, b) => {
   return a.indexOf(b)
 }
 
-const isIndexOfPatternTop = (a,b) => {
+const isIndexOfPatternTop = (a, b) => {
   return !a.indexOf(b)
 }
 
-const isIndexOfPatternBottom = (a,b) => {
+const isIndexOfPatternBottom = (a, b) => {
+  console.log(a.endsWith(b))
   return a.endsWith(b)
 }
 
 class IndexSample extends React.Component {
-
   render() {
     return (
       <div>
@@ -53,10 +52,10 @@ class IndexSample extends React.Component {
   }
 }
 
-ReactDOM.render(
-  <Sample2 />,
-  document.getElementById('root')
-);
+// ReactDOM.render(
+//   <Sample2 />,
+//   document.getElementById('root')
+// );
 
 
 module.exports = {
