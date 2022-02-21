@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+// import './index.css';
 
 export function Sample2() {
   const [count, setCount] = useState(0);
