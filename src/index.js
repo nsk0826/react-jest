@@ -38,6 +38,10 @@ const isIndexOfPatternTop = (a,b) => {
   return !a.indexOf(b)
 }
 
+const isIndexOfPatternBottom = (a,b) => {
+  return a.endsWith(b)
+}
+
 class IndexSample extends React.Component {
 
   render() {
@@ -62,5 +66,6 @@ module.exports = {
   checkDiff,
   unionString,
   isIndexOfPatternTop,
-  getIndexOfNumber
+  getIndexOfNumber,
+  isIndexOfPatternBottom
 };
