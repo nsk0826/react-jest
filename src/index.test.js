@@ -1,4 +1,4 @@
-const { sum, makeUser, makeRange, checkDiff, unionString, isIndexOfPatternTop, getIndexOfNumber, isIndexOfPatternBottom} = require('./index');
+const { sum, makeUser, makeRange, checkDiff, unionString, isIndexOfPatternTop, getIndexOfNumber, isIndexOfPatternBottom, sampleFunction} = require('./index');
 
 describe('test index.js file', () => {
   it('sums a and b', () => {
@@ -67,5 +67,8 @@ describe('test index.js file', () => {
     expect(isIndexOfPatternBottom("abcdefg", "f")).toBe(false);
   })
 
+  it('アロー関数　引数なし', () => {
+    expect(sampleFunction()).toBe("Hello japan");
+  })
 
 });
