@@ -42,6 +42,11 @@ const isIndexOfPatternBottom = (a, b) => {
   return a.endsWith(b)
 }
 
+const sampleFunction = () => {
+  console.log("Hello world")
+  return "Hello japan"
+}
+
 class IndexSample extends React.Component {
   render() {
     return (
@@ -66,5 +71,6 @@ module.exports = {
   unionString,
   isIndexOfPatternTop,
   getIndexOfNumber,
-  isIndexOfPatternBottom
+  isIndexOfPatternBottom,
+  sampleFunction
 };
