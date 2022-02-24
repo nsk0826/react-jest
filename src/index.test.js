@@ -1,4 +1,4 @@
-const { sum, makeUser, makeRange, checkDiff, unionString, isIndexOfPatternTop, getIndexOfNumber, isIndexOfPatternBottom, sampleFunction} = require('./index');
+import { sum, makeUser, makeRange, checkDiff, unionString, isIndexOfPatternTop, getIndexOfNumber, isIndexOfPatternBottom, sampleFunction, sampleFunctionArgs} from './index';
 
 describe('test index.js file', () => {
   it('sums a and b', () => {
