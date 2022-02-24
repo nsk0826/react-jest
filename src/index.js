@@ -47,6 +47,11 @@ const sampleFunction = () => {
   return "Hello japan"
 }
 
+const sampleFunctionArgs = (a = "hi!") => {
+  console.log(a)
+  return a + " world"
+}
+
 class IndexSample extends React.Component {
   render() {
     return (
@@ -72,5 +77,6 @@ module.exports = {
   isIndexOfPatternTop,
   getIndexOfNumber,
   isIndexOfPatternBottom,
-  sampleFunction
+  sampleFunction,
+  sampleFunctionArgs
 };
