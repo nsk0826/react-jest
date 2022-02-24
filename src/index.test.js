@@ -71,4 +71,13 @@ describe('test index.js file', () => {
     expect(sampleFunction()).toBe("Hello japan");
   })
 
+  it('sampleFunctionArgs 引数なし', () => {
+    expect(sampleFunctionArgs()).toBe("hi! world");
+  })
+
+  it('sampleFunctionArgs 引数あり', () => {
+    expect(sampleFunctionArgs("bye!")).toBe("bye! world");
+  })
+
+
 });
