@@ -52,6 +52,12 @@ const sampleFunctionArgs = (a = "hi!") => {
   return a + " world"
 }
 
+const sampleFunctionArgs2 = (a) => {
+  console.log(a)
+  return a + " fukuoka"
+}
+
+
 class IndexSample extends React.Component {
   render() {
     return (
