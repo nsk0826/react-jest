@@ -84,5 +84,6 @@ module.exports = {
   getIndexOfNumber,
   isIndexOfPatternBottom,
   sampleFunction,
-  sampleFunctionArgs
+  sampleFunctionArgs,
+  sampleFunctionArgs2
 };
