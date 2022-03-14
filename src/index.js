@@ -104,5 +104,6 @@ module.exports = {
   sampleFunction,
   sampleFunctionArgs,
   sampleFunctionArgs2,
-  sumReducer
+  sumReducer,
+  checkTestNull,
 };
