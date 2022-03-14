@@ -97,5 +97,9 @@ describe('test index.js file', () => {
     expect(checkTestNull(null)).toBe("null");
   })
 
+  it('checkTestNull not null ' , () => {
+    expect(checkTestNull(1)).toBe("not null");
+  })
+
 
 });
