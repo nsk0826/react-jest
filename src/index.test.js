@@ -1,4 +1,4 @@
-import { sum, makeUser, makeRange, checkDiff, unionString, isIndexOfPatternTop, getIndexOfNumber, isIndexOfPatternBottom, sampleFunction, sampleFunctionArgs, sampleFunctionArgs2} from './index';
+import { sum, makeUser, makeRange, checkDiff, unionString, isIndexOfPatternTop, getIndexOfNumber, isIndexOfPatternBottom, sampleFunction, sampleFunctionArgs, sampleFunctionArgs2, sumReducer} from './index';
 
 describe('test index.js file', () => {
   it('sums a and b', () => {
@@ -82,5 +82,16 @@ describe('test index.js file', () => {
   it('sampleFunctionArgs2 引数あり', () => {
     expect(sampleFunctionArgs2("hi!")).toBe("hi! fukuoka");
   })
+
+  it('sumReducer 1 2 3', () => {
+    const person = {name:"ken", num:1}
+    const person2 = {name:"ren", num:2}
+    const person3 = {name:"gen", num:3}
+
+    const arr = [person, person2, person3]
+
+    expect(sumReducer(arr)).toBe(6);
+  })
+
 
 });
