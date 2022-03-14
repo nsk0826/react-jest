@@ -67,6 +67,13 @@ const sumReducer = (obj) => {
   return i
 }
 
+const checkTestNull= (arg) => {
+  if(arg == null){
+    return "null"
+  }
+  return "not null"
+}
+
 
 class IndexSample extends React.Component {
   render() {
