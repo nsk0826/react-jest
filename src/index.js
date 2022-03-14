@@ -96,5 +96,6 @@ module.exports = {
   isIndexOfPatternBottom,
   sampleFunction,
   sampleFunctionArgs,
-  sampleFunctionArgs2
+  sampleFunctionArgs2,
+  sumReducer
 };
