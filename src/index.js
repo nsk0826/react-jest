@@ -57,6 +57,16 @@ const sampleFunctionArgs2 = (a) => {
   return a + " fukuoka"
 }
 
+const sumReducer = (obj) => {
+  console.log(obj)
+  let arr = obj.map(o => o['num']);
+  console.log(arr)
+
+  const reducer = (accumulator, currentValue ) => accumulator + currentValue;
+  let i = arr.reduce(reducer);
+  return i
+}
+
 
 class IndexSample extends React.Component {
   render() {
@@ -67,6 +77,7 @@ class IndexSample extends React.Component {
     );
   }
 }
+
 
 // ReactDOM.render(
 //   <Sample2 />,
