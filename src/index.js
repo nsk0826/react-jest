@@ -112,4 +112,5 @@ module.exports = {
   sampleFunctionArgs2,
   sumReducer,
   checkTestNull,
+  arySum
 };
