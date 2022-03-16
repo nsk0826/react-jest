@@ -75,7 +75,7 @@ const checkTestNull= (arg) => {
 }
 
 const arySum = (ary) => {
-  arr.reduce((a,b) =>{
+  return ary.reduce((a,b) =>{
     return a + b;
   })
 }
