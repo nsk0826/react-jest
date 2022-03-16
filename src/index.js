@@ -74,6 +74,12 @@ const checkTestNull= (arg) => {
   return "not null"
 }
 
+const arySum = (ary) => {
+  arr.reduce((a,b) =>{
+    return a + b;
+  })
+}
+
 
 class IndexSample extends React.Component {
   render() {
