@@ -117,4 +117,9 @@ describe('test index.js file', () => {
     expect(arySum2(1,2,3,"A")).toBe("6A");
   })
 
+
+  it('check A123B arySum2' , () => {
+    expect(arySum2("A",1,2,3,"B")).toBe("A123B");
+  })
+
 });
