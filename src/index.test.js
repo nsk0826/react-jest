@@ -1,4 +1,4 @@
-import {arySum, checkTestNull, sum, makeUser, makeRange, checkDiff, unionString, isIndexOfPatternTop, getIndexOfNumber, isIndexOfPatternBottom, sampleFunction, sampleFunctionArgs, sampleFunctionArgs2, sumReducer} from './index';
+import {arySum2, arySum, checkTestNull, sum, makeUser, makeRange, checkDiff, unionString, isIndexOfPatternTop, getIndexOfNumber, isIndexOfPatternBottom, sampleFunction, sampleFunctionArgs, sampleFunctionArgs2, sumReducer} from './index';
 
 describe('test index.js file', () => {
   it('sums a and b', () => {
@@ -108,5 +108,13 @@ describe('test index.js file', () => {
     expect(arySum(arr)).toBe(7);
   })
 
+  it('check arySum2' , () => {
+    expect(arySum2(1,2,3)).toBe(6);
+  })
+
+
+  it('check 6A arySum2' , () => {
+    expect(arySum2(1,2,3,"A")).toBe("6A");
+  })
 
 });
