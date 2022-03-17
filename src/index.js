@@ -1,3 +1,4 @@
+import { stringify } from 'querystring';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Sample2 } from './sample2';
@@ -77,6 +78,12 @@ const checkTestNull= (arg) => {
 const arySum = (ary) => {
   return ary.reduce((a,b) =>{
     return a + b;
+  })
+}
+
+const arySum2 = ( ...arg ) => {
+  return arg.reduce((a,b) => {
+    return a + b
   })
 }
 
