@@ -7,3 +7,7 @@ export function makeHuman(name : string , age: number): Human {
   }
   return newHuman;
 };
+
+export function humanName(human: Human): string {
+  return human.name;
+}
