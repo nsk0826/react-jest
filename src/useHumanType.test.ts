@@ -12,5 +12,11 @@ describe('useHuman' , (): void => {
       "taro", 5)
 
     expect(humanName(taro)).toBe("taro")
-  });    
+  });
+  test('humanName２', (): void => {
+    const taro = makeHuman(
+      "二郎", 5)
+
+    expect(humanName(taro)).toBe("二郎")
+  });     
 })
