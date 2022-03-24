@@ -1,7 +1,9 @@
-import {sumScore } from "./score";
+import {sumScore, randomScore} from "./score";
 
 describe("#score", () => {
   it("sum", () => {
     expect(sumScore(1,4)).toBe(5);
   });
+
 });
+
