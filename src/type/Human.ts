@@ -1,4 +1,5 @@
 export　type Human = {
   name: string,
-  age: number
+  age: number,
+  address: string
 };
