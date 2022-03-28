@@ -1,9 +1,11 @@
+import { stringify } from "querystring";
 import {Human} from "./type/Human";
 
-export function makeHuman(name : string , age: number): Human {
+export function makeHuman(name : string , age: number, address: string): Human {
   const newHuman = {
     name : name,
-    age: age
+    age: age,
+    address: address,
   }
   return newHuman;
 };
