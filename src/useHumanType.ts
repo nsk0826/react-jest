@@ -13,3 +13,7 @@ export function makeHuman(name : string , age: number, address: string): Human {
 export function humanName(human: Human): string {
   return human.name;
 }
+
+export function totalAge (...human : Human) : number {
+  
+}
