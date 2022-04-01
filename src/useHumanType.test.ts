@@ -40,6 +40,6 @@ describe("useHuman", (): void => {
 
     const humans = [ichiro, jiro, saburo];
 
-    expect(numberHumanAddress(humans, "Fukuoka")).toBe(2);
+    expect(numberHumanAddress(humans, "Fukuoka")).toBe(2); 
   });
 });
