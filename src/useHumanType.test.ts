@@ -1,4 +1,4 @@
-import { makeHuman, humanName, totalAge } from "./useHumanType";
+import { makeHuman, humanName, totalAge,numberFilterAddress } from "./useHumanType";
 describe("useHuman", (): void => {
   test("makeHuman", (): void => {
     expect(makeHuman("taro", 5, "fukuoka")).toEqual({
@@ -27,6 +27,18 @@ describe("useHuman", (): void => {
 
     expect(totalAge(humans)).toBe(70);
   });
+
+  test("totalAddressCnt", (): void => {
+    const ichiro = makeHuman("一郎", 40, "Fukuoka");
+    const jiro = makeHuman("二郎", 20, "saga");
+    const saburo = makeHuman("三郎", 10, "Fukuoka");
+
+
+    const humans = [ichiro,jiro,saburo];
+
+    expect(numberFilterAddress(humans, "Fukuoka")).toBe(2);
+  });
+
 
 
 });
