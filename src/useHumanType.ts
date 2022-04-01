@@ -16,12 +16,12 @@ export function humanName(human: Human): string {
 }
 
 export function totalAge(humans: Human[]): number {
-  const total:number = humans.reduce((p: number, current: Human): number => {
+  const total: number = humans.reduce((p: number, current: Human): number => {
     return p + current.age;
-  },0);
+  }, 0);
   return total;
 }
 
-export functiaroess(humans: Human[], address: string):number {
+export function numberHumanAddress(humans: Human[], address: string): number {
   return humans.filter((h) => h.address === address).length;
-};
+}
