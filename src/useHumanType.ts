@@ -23,8 +23,5 @@ export function totalAge(humans: Human[]): number {
 }
 
 export const numberFilterAddress = (humans: Human[], address: string):number => {
-
-
-
-  return 1
+  return humans.filter((h) => h.address === address).length
 }
