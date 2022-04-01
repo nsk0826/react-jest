@@ -1,10 +1,15 @@
-import { makeHuman, humanName, totalAge,numberFilterAddress } from "./useHumanType";
+import {
+  makeHuman,
+  humanName,
+  totalAge,
+  numberHumanAddress,
+} from "./useHumanType";
 describe("useHuman", (): void => {
   test("makeHuman", (): void => {
     expect(makeHuman("taro", 5, "fukuoka")).toEqual({
       name: "taro",
       age: 5,
-      address: "fukuoka"
+      address: "fukuoka",
     });
   });
   test("humanName", (): void => {
@@ -23,7 +28,7 @@ describe("useHuman", (): void => {
     const jiro = makeHuman("二郎", 20, "saga");
     const saburo = makeHuman("三郎", 10, "saga");
 
-    const humans = [ichiro,jiro,saburo];
+    const humans = [ichiro, jiro, saburo];
 
     expect(totalAge(humans)).toBe(70);
   });
@@ -33,12 +38,8 @@ describe("useHuman", (): void => {
     const jiro = makeHuman("二郎", 20, "saga");
     const saburo = makeHuman("三郎", 10, "Fukuoka");
 
+    const humans = [ichiro, jiro, saburo];
 
-    const humans = [ichiro,jiro,saburo];
-
-    expect(numberFilterAddress(humans, "Fukuoka")).toBe(2);
+    expect(numberHumanAddress(humans, "Fukuoka")).toBe(2);
   });
-
-
-
 });
