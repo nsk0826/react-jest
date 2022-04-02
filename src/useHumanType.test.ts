@@ -42,4 +42,14 @@ describe("useHuman", (): void => {
 
     expect(numberHumanAddress(humans, "Fukuoka")).toBe(2);
   });
+  test("totalAddressCnt0", (): void => {
+    const ichiro = makeHuman("一郎", 40, "Fukuoka");
+    const jiro = makeHuman("二郎", 20, "saga");
+    const saburo = makeHuman("三郎", 10, "saga");
+
+    const humans = [ichiro, jiro, saburo];
+
+    expect(numberHumanAddress(humans, "nakasu")).toBe(0);
+  });
+  
 });
