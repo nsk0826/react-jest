@@ -51,5 +51,15 @@ describe("useHuman", (): void => {
 
     expect(numberHumanAddress(humans, "nakasu")).toBe(0);
   });
+
+  test("totalAddressCnt3", (): void => {
+    const ichiro = makeHuman("一郎", 40, "Fukuoka");
+    const jiro = makeHuman("二郎", 20, "Fukuoka");
+    const saburo = makeHuman("三郎", 10, "Fukuoka");
+
+    const humans = [ichiro, jiro, saburo];
+
+    expect(numberHumanAddress(humans, "Fukuoka")).toBe(3);
+  });
   
 });
