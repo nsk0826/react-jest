@@ -61,5 +61,16 @@ describe("useHuman", (): void => {
 
     expect(numberHumanAddress(humans, "Fukuoka")).toBe(3);
   });
-  
+
+  test("mock test", (): void => {
+    const myMock = jest.fn();
+
+    const b = 100;
+    const bound = myMock.bind(b);
+    bound();
+
+    console.log(myMock.mock.instances);
+
+    //expect(numberHumanAddress()).toBe(3);
+  });
 });
