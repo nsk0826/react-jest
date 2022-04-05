@@ -3,6 +3,7 @@ import {
   humanName,
   totalAge,
   numberHumanAddress,
+  isNumberBiggerFor
 } from "./useHumanType";
 describe("useHuman", (): void => {
   test("makeHuman", (): void => {
@@ -73,4 +74,16 @@ describe("useHuman", (): void => {
 
     //expect(numberHumanAddress()).toBe(3);
   });
+
+  test("age filter ", (): void => {
+    const ichiro = makeHuman("一郎", 40, "Fukuoka");
+    const jiro = makeHuman("二郎", 20, "Fukuoka");
+    const saburo = makeHuman("三郎", 10, "Fukuoka");
+
+    const humans = [ichiro, jiro, saburo];
+
+    const results = isNumberBiggerFor(humans, 10)
+
+    expect(isNumberBiggerFor(humans, 10)).toEqual([{"address": "Fukuoka", "age": 40, "name": "一郎"}, {"address": "Fukuoka", "age": 20, "name": "二郎"}]);
+  })
 });
