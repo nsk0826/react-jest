@@ -25,3 +25,7 @@ export function totalAge(humans: Human[]): number {
 export function numberHumanAddress(humans: Human[], address: string): number {
   return humans.filter((h) => h.address === address).length;
 }
+
+export function isNumberBiggerFor(humans: Human[] , age : number ): Human[] {
+  return humans.filter((h) => h.age > age) 
+}
