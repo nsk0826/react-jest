@@ -103,6 +103,16 @@ describe("useHuman", (): void => {
       { address: "Fukuoka", age: 10, name: "三郎" },
     ]);
   });
+
+  test("age filter 41以上", (): void => {
+    const ichiro = makeHuman("一郎", 40, "Fukuoka");
+    const jiro = makeHuman("二郎", 20, "Fukuoka");
+    const saburo = makeHuman("三郎", 10, "Fukuoka");
+
+    const humans = [ichiro, jiro, saburo];
+
+    expect(isNumberBiggerFor(humans, 41)).toEqual([]);
+  });
 });
 
 
