@@ -4,6 +4,7 @@ import {
   totalAge,
   numberHumanAddress,
   isNumberBiggerFor,
+  isNumberMiniFor
 } from "./useHumanType";
 describe("useHuman", (): void => {
   test("makeHuman", (): void => {
@@ -112,6 +113,16 @@ describe("useHuman", (): void => {
     const humans = [ichiro, jiro, saburo];
 
     expect(isNumberBiggerFor(humans, 41)).toEqual([]);
+  });
+
+  test("age min 41以上", (): void => {
+    const ichiro = makeHuman("一郎", 40, "Fukuoka");
+    const jiro = makeHuman("二郎", 20, "Fukuoka");
+    const saburo = makeHuman("三郎", 10, "Fukuoka");
+
+    const humans = [ichiro, jiro, saburo];
+
+    expect(isNumberMiniFor(humans, 41)).toEqual(3);
   });
 });
 
