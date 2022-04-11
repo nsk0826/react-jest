@@ -30,6 +30,6 @@ export function isNumberBiggerFor(humans: Human[] , age : number ): Human[] {
   return humans.filter((h) => h.age > age) 
 }
 
-export function isNumberMiniFor(humans: Human[] , age : number ): Human[] {
-  return humans.filter((h) => h.age < age) 
+export function isNumberMiniFor(humans: Human[] , age : number ):number {
+  return humans.filter((h) => h.age < age).length
 }
