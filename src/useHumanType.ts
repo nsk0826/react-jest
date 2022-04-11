@@ -29,3 +29,7 @@ export function numberHumanAddress(humans: Human[], address: string): number {
 export function isNumberBiggerFor(humans: Human[] , age : number ): Human[] {
   return humans.filter((h) => h.age > age) 
 }
+
+export function isNumberMiniFor(humans: Human[] , age : number ): Human[] {
+  return humans.filter((h) => h.age < age) 
+}
