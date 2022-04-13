@@ -134,6 +134,15 @@ describe("useHuman", (): void => {
 
     expect(isNumberMiniFor(humans, 10)).toEqual(0);
   });
+  test("age min 11未満", (): void => {
+    const ichiro = makeHuman("一郎", 40, "Fukuoka");
+    const jiro = makeHuman("二郎", 20, "Fukuoka");
+    const saburo = makeHuman("三郎", 10, "Fukuoka");
+
+    const humans = [ichiro, jiro, saburo];
+
+    expect(isNumberMiniFor(humans, 11)).toEqual(1);
+  });
 });
 
 
