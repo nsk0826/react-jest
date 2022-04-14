@@ -36,7 +36,7 @@ export function isNumberMiniFor(humans: Human[] , age : number ):number {
 }
 
 
-export function numberSum( ) {
+export function getNowDate( ) {
   function now():Date{
     return new Date();
   }
