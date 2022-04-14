@@ -1,3 +1,4 @@
+import { networkInterfaces } from "os";
 import { stringify } from "querystring";
 import { createSecureContext } from "tls";
 import { Human } from "./type/Human";
@@ -32,4 +33,13 @@ export function isNumberBiggerFor(humans: Human[] , age : number ): Human[] {
 
 export function isNumberMiniFor(humans: Human[] , age : number ):number {
   return humans.filter((h) => h.age < age).length
+}
+
+
+export function numberSum( ) {
+  function now():Date{
+    return new Date();
+  }
+
+  return now().getDate.toString
 }
