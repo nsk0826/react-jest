@@ -36,10 +36,12 @@ export function isNumberMiniFor(humans: Human[] , age : number ):number {
 }
 
 
-export function getNowDate( ) {
-  function now():Date{
-    return new Date();
+export function getNowDate() {
+  function functionNow(){
+    return Date.now();
   }
 
-  return now().getDate.toString
+  const now = functionNow()
+
+  return now
 }
