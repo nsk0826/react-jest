@@ -4,7 +4,8 @@ import {
   totalAge,
   numberHumanAddress,
   isNumberBiggerFor,
-  isNumberMiniFor
+  isNumberMiniFor,
+  getNowDate
 } from "./useHumanType";
 describe("useHuman", (): void => {
   test("makeHuman", (): void => {
@@ -142,6 +143,11 @@ describe("useHuman", (): void => {
     const humans = [ichiro, jiro, saburo];
 
     expect(isNumberMiniFor(humans, 11)).toEqual(1);
+  });
+
+  test("getNowDate", (): void => {
+
+    expect(getNowDate()).toEqual(1);
   });
 });
 
