@@ -145,10 +145,6 @@ describe("useHuman", (): void => {
     expect(isNumberMiniFor(humans, 11)).toEqual(1);
   });
 
-  test("getNowDate", (): void => {
-
-    expect(getNowDate()).toEqual(1);
-  });
 });
 
 
