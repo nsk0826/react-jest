@@ -145,4 +145,11 @@ describe("useHuman", (): void => {
     expect(isNumberMiniFor(humans, 11)).toEqual(1);
   });
 
+  test.each([
+    [{name: "一郎",age:10, address: "tokyo"},"一郎"],
+    [{name: "次郎",age:8, address: "saga"},"次郎"]
+  ])('.test(%i, %i)', (a, expected) => {
+    expect(humanName(a)).toBe(expected);
+  })
+
 });
