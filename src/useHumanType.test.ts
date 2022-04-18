@@ -5,7 +5,7 @@ import {
   numberHumanAddress,
   isNumberBiggerFor,
   isNumberMiniFor,
-  getNowDate
+  getNowDate,
 } from "./useHumanType";
 describe("useHuman", (): void => {
   test("makeHuman", (): void => {
@@ -146,10 +146,9 @@ describe("useHuman", (): void => {
   });
 
   test.each([
-    [{name: "一郎",age:10, address: "tokyo"},"一郎"],
-    [{name: "次郎",age:8, address: "saga"},"次郎"]
-  ])('.test(%i, %i)', (a, expected) => {
+    [{ name: "一郎", age: 10, address: "tokyo" }, "一郎"],
+    [{ name: "次郎", age: 8, address: "saga" }, "次郎"],
+  ])(".test(%o, %p)", (a, expected) => {
     expect(humanName(a)).toBe(expected);
-  })
-
+  });
 });
