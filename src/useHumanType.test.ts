@@ -151,4 +151,11 @@ describe("useHuman", (): void => {
   ])(".test(%o, %p)", (a, expected) => {
     expect(humanName(a)).toBe(expected);
   });
+
+  test.each([
+    [{ name: "一郎", age: 10, address: "tokyo" },"一郎"],
+    [{ name: "次郎", age: 8, address: "saga" }, "次郎"],
+  ])(".numberHumanAddress (%o, %p)", (a, expected) => {
+    expect(numberHumanAddress(,)).toBe(expected);
+  });
 });
