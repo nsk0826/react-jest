@@ -27,21 +27,23 @@ export function numberHumanAddress(humans: Human[], address: string): number {
   return humans.filter((h) => h.address === address).length;
 }
 
-export function isNumberBiggerFor(humans: Human[] , age : number ): Human[] {
-  return humans.filter((h) => h.age > age) 
+export function isNumberBiggerFor(humans: Human[], age: number): Human[] {
+  return humans.filter((h) => h.age > age);
 }
 
-export function isNumberMiniFor(humans: Human[] , age : number ):number {
-  return humans.filter((h) => h.age < age).length
+export function isNumberMiniFor(humans: Human[], age: number): number {
+  return humans.filter((h) => h.age < age).length;
 }
-
 
 export function getNowDate() {
-  function functionNow(){
+  function functionNow() {
     return Date.now();
   }
 
-  const now = functionNow()
+  const now = functionNow();
 
-  return now
+  return now;
+}
+export function makeProf(human: Human) {
+  return `${human.name}は${human.age}歳`;
 }
