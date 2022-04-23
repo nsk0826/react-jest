@@ -159,4 +159,11 @@ describe("useHuman", (): void => {
   ])(".numberHumanAddress (%p, %p)", (a, expected) => {
     expect(makeProf(a)).toBe(expected);
   });
+
+  test.each([
+    [{ name: "", age: 10, address: "tokyo" }, "は10歳"],
+    [{ name: "", age: 8, address: "saga" }, "は8歳"],
+  ])(".名前の入力が無い時 (%p, %p)", (a, expected) => {
+    expect(makeProf(a)).toBe(expected);
+  });
 });
